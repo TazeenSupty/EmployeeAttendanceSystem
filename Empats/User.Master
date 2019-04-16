@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="Empats.User" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:HyperLink runat="server" NavigateUrl="~/user_home.aspx" Text=" Home"> </asp:HyperLink>
+            <asp:HyperLink runat="server" NavigateUrl="~/userProfile.aspx" Text=" Profile"> </asp:HyperLink>
+
+            <asp:ContentPlaceHolder ID="body" runat="server">
+
+            </asp:ContentPlaceHolder>
+
+            <div id="logout">
+                
+                 <asp:Button ID="btn_logout" runat="server" Height="22px" OnClick="btn_logout_Click" Text="Log Out" Width="70px" />
+                
+            </div>
+
+            <div id="Copyright">
+                <h4>@Tazeen</h4>
+
+            </div>
+            
+        </div>
+
+    </form>
+</body>
+</html>
